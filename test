@@ -1,0 +1,16 @@
+import numpy as np
+import matplotlib
+import Image
+import matplotlib.pyplot as plt
+from scipy.stats import chisquare
+import matplotlib.image as mpimg
+
+
+a=[i for i in range(100)]
+plt.plot(a)
+
+plt.savefig('myfig.pdf')
+
+im = Image.open('myfig.pdf')
+plt.imshow(im)
+plt.show()
